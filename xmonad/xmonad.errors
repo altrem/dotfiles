@@ -1,15 +1,15 @@
 
-xmonad.hs:12:1: warning: [-Wtabs]
-    Tab character found here, and in five further locations.
+xmonad.hs:14:1: warning: [-Wtabs]
+    Tab character found here, and in six further locations.
     Please use spaces instead.
    |
-12 |         modMask  = mod4Mask,
+14 |         modMask  = mod4Mask,
    | ^^^^^^^^
 
-xmonad.hs:17:46: warning: [-Wdeprecations]
+xmonad.hs:20:46: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-17 |         keys = \c -> myKeys c `M.union` keys defaultConfig c
+20 |         keys = \c -> myKeys c `M.union` keys defaultConfig c
    |                                              ^^^^^^^^^^^^^

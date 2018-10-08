@@ -1,0 +1,15 @@
+Config { font = "xft:Noto Sans:size=10"
+       , bgColor = "black"
+       , alpha   = 75 
+       , fgColor = "grey"
+       , position = TopW L 100
+       , commands = [ Run Weather "CYQB" ["-t","Québec, CA <tempC> °C","-L","10","-H","25","--normal","#85c258","--high","#dd4242","--low","#48bbd1"] 36000
+                    , Run Cpu ["-t","CPU: <total> %","-L","0","-H","50","--normal","#85c258","--high","#dd4242"] 10
+                    , Run Memory ["-t","Mem: <usedratio> %","-L","0","-H","50","--normal","#85c258", "--high","#dd4242"] 10
+                    , Run Date "%a %b %_d %l:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %cpu% | %memory% | <fc=#c89544>%date%</fc> | %CYQB%"
+       }

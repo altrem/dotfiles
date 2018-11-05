@@ -1,0 +1,1 @@
+Place this file in .config/autostart-scripts directory with executable flag.
